@@ -1,0 +1,6 @@
+node_modules/
+feathers-basics/package-lock.json
+feathers-basics/package.json
+package.json
+package-lock.json
+.vscode/launch.json

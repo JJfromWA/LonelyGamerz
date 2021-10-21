@@ -1,7 +1,8 @@
 # TitanTalkz
-<p>Connect with your CSUF peers on our social media web platform<br></p>
+<p>Connect with your CSUF peers on our social media web platform<br>
+A software engineering project for CSUF CSPS 362 Group 6</p>
 
-<h1> User Roles </h1>
+<h2> User Roles </h2>
 <a> <b> Project Owner/Developer: </b>  Jeremy <br>
  <b> Scrum Master/Developer: </b> Jessica <br>
  <b> Developer: </b> Jeff <br>

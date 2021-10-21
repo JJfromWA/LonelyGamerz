@@ -15,7 +15,7 @@ Getting up and running is as easy as 1, 2, 3.
 
     ```
     cd path/to/talkz
-    npm install
+    npm install @feathersjs/feathers @feathersjs/socketio @feathersjs/express --save
     ```
 
 3. Start your app

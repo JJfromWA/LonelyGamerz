@@ -9,17 +9,17 @@ module.exports = function (app) {
 
     email: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
 
     googleId: { type: DataTypes.STRING },
 
-    facebookId: { type: DataTypes.STRING }
+    githubId: { type: DataTypes.STRING }
 
   }, {
     hooks: {
@@ -29,11 +29,17 @@ module.exports = function (app) {
     }
   })
 
-  // eslint-disable-next-line no-unused-vars
   users.associate = function (models) {
+
+    const { posts, profile } = models;
+    users.hasMany(posts); // Add userId to posts model
+    users.hasOne(profile);
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
   }
+
+  // eslint-disable-next-line no-unused-vars
+  
 
   return users
 }

@@ -14,76 +14,81 @@ client.configure(feathers.authentication({
 
 // Login screen
 const loginHTML = `<main class="login container">
-  <div class="row">
-    <div class="col-12 col-6-tablet push-3-tablet text-center heading">
-      <h1 class="font-100">Log in or signup</h1>
+  <header class="w3-container w3-center w3-padding-32">
+    <h1><b>Titan</b>Talkz</h1>
+    <h2><b>Log in or Sign up</b></h2>
     </div>
-  </div>
+  </header>
   <div class="row">
     <div class="col-12 col-6-tablet push-3-tablet col-4-desktop push-4-desktop">
       <form class="form">
-        <fieldset>
-          <input class="block" type="email" name="email" placeholder="email">
-        </fieldset>
+        <p>
+          <input class="w3-input w3-section w3-border" type="email" name="email" placeholder="email">
+        </p>
 
-        <fieldset>
-          <input class="block" type="password" name="password" placeholder="password">
-        </fieldset>
+        <p>
+          <input class="w3-input w3-section w3-border" type="password" name="password" placeholder="password">
+        </p>
 
-        <button type="button" id="login" class="button button-primary block signup">
+        </form>
+
+
+        <div class="w3-center">
+        <p><button type="button" id="login" class="w3-button w3-dark-grey w3-padding-large">
           Log in
-        </button>
-
-        <button type="button" id="signup" class="button button-primary block signup">
+        </button></p>
+        
+        <p><button type="button" id="signup" class="w3-button w3-dark-grey w3-padding-large">
           Sign up and log in
-        </button>
+        </button></p>
 
-        <a class="button button-primary block" href="/oauth/github">
-          Login with GitHub
-        </a>
+        <p><a class="w3-button w3-dark-grey w3-padding-large" href="/oauth/github">
+           Login with GitHub
+         </a></p>
 
-        <a class="button button-primary block" href="/oauth/google">
-          Login with Google
-        </a>
-      </form>
+        <p><a class="w3-button w3-dark-grey w3-padding-large" href="/oauth/google">
+           Login with Google
+         </a></p>
+        </div>
+      
     </div>
   </div>
 </main>`;
 
 // Chat base HTML (without user list and messages)
 const chatHTML = `<main class="flex flex-column">
-  <header class="title-bar flex flex-row flex-center">
-    <div class="title-wrapper block center-element">
-      <img class="logo" src="http://feathersjs.com/img/feathers-logo-wide.png"
-        alt="Feathers Logo">
-      <span class="title">Chat</span>
+<div class="w3-top">
+<div class="w3-bar w3-black w3-wide w3-padding w3-card">
+  <a href="/" class="w3-bar-item w3-button"><b>Titan</b>Talkz</a>
+  <!-- Float links to the right. Hide them on small screens -->
+  <div class="w3-right w3-hide-small">
+  <a href="https://github.com/JJfromWA/TitanTalkz" class="w3-bar-item w3-button">Our Github</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-padding-large w3-button" title="More">
+    <img src="/pictures/logo.png" width="30" alt="" class="avatar">
+    <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Your Profile</a>
+        <a href="#" id="logout" class="w3-bar-item w3-button">Sign Out</a>
     </div>
-  </header>
+  </div>
+</div>
+</div>
+</div>
 
-  <div class="flex flex-row flex-1 clear">
-    <aside class="sidebar col col-3 flex flex-column flex-space-between">
-      <header class="flex flex-row flex-center">
-        <h4 class="font-300 text-center">
-          <span class="font-600 online-count">0</span> users
-        </h4>
-      </header>
-
-      <ul class="flex flex-column flex-1 list-unstyled user-list"></ul>
-      <footer class="flex flex-row flex-center">
-        <a href="#" id="logout" class="button button-primary">
-          Sign Out
-        </a>
-      </footer>
-    </aside>
-
-    <div class="flex flex-column col col-9">
-      <main class="chat flex flex-column flex-1 clear"></main>
-
-      <form class="flex flex-row flex-space-between" id="send-message">
-        <input type="text" name="text" class="flex flex-1">
-        <button class="button-primary" type="submit">Send</button>
-      </form>
+<div class="w3-row">
+<hr>
+<hr>
+<hr>
+  <div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-white">
+  <img src="/pictures/logo.png" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Placeholder</b></h4>
+      <p>Ribbit Ribbit Ribbit Ribbit Ribbit Ribbit Ribbit Ribbit Ribbit Ribbit Ribbit</p>
     </div>
+  </div><hr>
   </div>
 </main>`;
 

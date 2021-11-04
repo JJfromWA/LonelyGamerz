@@ -30,8 +30,8 @@
     "oauth": {
       "redirect": "/",
       "google": {
-        "key": "<google oauth key>",
-        "secret": "<google oauth secret>",
+        "key": "516839998819-h0svuafi2ftrvjre2bhu2cqqiaqcms7n.apps.googleusercontent.com",
+        "secret": "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",
         "scope": [
           "email",
           "profile",
@@ -41,6 +41,10 @@
       "facebook": {
         "key": "<facebook oauth key>",
         "secret": "<facebook oauth secret>"
+      },
+      "github": {
+        "key": "32a56aef4f6db48933ec",
+        "secret": "7fcd6b9be7e6b0ba6b0ce2992dad726576ae78ab"
       }
     }
   },

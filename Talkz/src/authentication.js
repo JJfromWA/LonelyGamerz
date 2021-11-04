@@ -11,7 +11,7 @@ class GitHubStrategy extends OAuthStrategy {
     return {
       ...baseData,
       // You can also set the display name to profile.name
-      name: profile.login,
+      name: profile.name,
       // The GitHub profile image
       avatar: profile.avatar_url,
       // The user email address (if available)
@@ -29,7 +29,8 @@ class GoogleStrategy extends OAuthStrategy {
     // this will grab the picture and email address of the Google profile
     return {
       ...baseData,
-      profilePicture: profile.picture,
+      name: profile.name,
+      
       email: profile.email
     };
   }
